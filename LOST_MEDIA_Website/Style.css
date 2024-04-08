@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Myfont";
+    src: url(Cyberye.ttf);
+}
+#banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+    background-position: center;
+    height: 100vh;
+}
+.navbar{
+    text-align: right;
+    font-size: 3em;
+    font-family: "Myfont";
+}
+
+.navbar a{
+    color: rgb(255, 255, 255);
+}
+
+.navbar a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.Background-clip{
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.banner-text{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 90px;
+    font-family: "Myfont";
+    font-size: 55px;
+
+}
+
+.banner_btn{
+    margin: 70px auto 0;
+}
+
+.banner_btn a {
+    font-size: 70px;
+    text-decoration: none;
+    display: in;
+    margin: 0 20px;
+    color: black;
+    padding: 10px 10px;
+    border: 5px solid rgb(0, 0, 0);
+    z-index: 1;
+    transition: 1s;
+}
+
+.banner_btn a span{
+    position: absolute;
+    top: 350;
+    left: 560;
+    width: 0%;
+    height: 13%;
+    background: rgb(0, 0, 0);
+    transition: 0.5s;
+    z-index: -1;
+
+}
+
+.banner_btn a:hover span{
+    width:22.5%
+}
+.banner_btn a:hover{
+    color: white;
+}

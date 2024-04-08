@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Myfont";
+    src: url(Vampire_Wars.ttf);
+}
+
+body{
+    font-family: "Myfont";
+    background: linear-gradient(to bottom, #333333, #000000)
+}
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: rgb(150, 1, 1);
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 545px;
+    height: 5px;
+    background-color:rgb(150, 1, 1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+} 
+.contact-input{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+.contact-input textarea{
+    height: 180px;
+    padding-top: 15px;
+    border-radius: 20px;
+
+}
+
+.contact-input:focus{
+    border: 2px solid red
+}
+
+.contact-input::placeholder{
+    color: red;
+}
+.contact-left button{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(23, 1, 1,);
+    font-family: "Myfont";
+}
+
+
+.contact-left button a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #cb0000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.contact-left a:hover{
+    color: #000000;
+    background: #760202;
+    box-shadow: 0 0 30px #000000, 0 0 60px #6b6b6b, 0 0 100px #fffefe;
+    transition-delay: 0.1s;
+}
+
+input[type = "file"]{
+    color:red
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    border-radius: 0;
+    border-width: 10px;
+    color: rgb(0, 0, 0); 
+}

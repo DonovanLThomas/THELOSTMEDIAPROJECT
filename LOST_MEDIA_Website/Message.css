@@ -1,0 +1,156 @@
+.container{
+    display: inline-block;
+}
+@font-face {
+    font-family: "Myfont";
+    src: url(Vampire_Wars.ttf);
+}
+body{
+    background: linear-gradient(rgb(53, 2, 2),rgba(23, 1, 1, 0.9));
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    text-align: center;
+    font-family: "MyFont";
+}
+
+.navbar a{
+    color: black;
+    font-size: 4em;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+.text-1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Myfont";
+    font-size: 20px;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:typing-1 7s steps(50) forwards;
+    visibility: hidden;
+}
+
+.text-2{
+    text-align: center;
+    color: rgb(200, 200, 200);
+    font-family: "Myfont";
+    font-size: 20px;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:typing 7s steps(50) forwards;
+    animation-delay: 7s;
+    visibility: hidden;
+}
+.text-3{
+    text-align: center;
+    color: rgb(200, 200, 200);
+    font-family: "Myfont";
+    font-size: 20px;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:typing 6s steps(50) forwards;
+    animation-delay: 14s;
+    visibility: hidden;
+}
+.text-4{
+    text-align: center;
+    color: rgb(200, 200, 200);
+    font-family: "Myfont";
+    font-size: 20px;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:typing 5s steps(50) forwards;
+    animation-delay: 20s;
+    visibility: hidden;
+
+}
+.text-5{
+    text-align: center;
+    color: rgb(200, 200, 200);
+    font-family: "Myfont";
+    font-size: 20px;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:typing 3s steps(50) forwards;
+    animation-delay: 25s;
+    visibility: hidden;
+}
+
+
+@keyframes typing {
+    from{width: 0;}
+    to { visibility: visible; }
+}
+
+@keyframes typing-1 {
+    from{width: 0;
+        text-decoration: none;
+    }
+    to {visibility: visible;
+    }
+}
+
+
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+
+.special_btn{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(23, 1, 1,);
+    font-family: "Myfont";
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+    animation-delay: 27.5s;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; } /* Fade in effect */
+}
+
+.special_btn a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.special_btn a:hover{
+    color: #000000;
+    background: #760202;
+    box-shadow: 0 0 20px #000000, 0 0 60px #6b6b6b, 0 0 100px #fffefe;
+    transition-delay: 0.1s;
+}
